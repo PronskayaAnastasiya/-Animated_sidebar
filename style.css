@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    font: 18px/1.3 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #191b22;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    font-size: 30px;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.main {
+    position: relative;
+    width: 100%;
+}
+
+.main__bg {
+    background-color: rgb(138, 121, 121);
+}
+
+.main__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 100px;
+    transition: 0.3s all;
+}
+
+.main__content__bg {
+    background-color: rgb(247, 240, 240);
+    transform: translate(20%, 5%) scale(0.8);
+}
