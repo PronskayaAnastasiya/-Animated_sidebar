@@ -8,6 +8,8 @@ body {
 
 .wrapper {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .sidebar {
@@ -17,14 +19,38 @@ body {
     color: white;
     display: flex;
     align-items: center;
+    transition: 0.3s all;
+}
+
+.sidebar__icon:hover {
+    cursor: pointer;
+}
+
+.change__icon>.fa-bars {
+    visibility: hidden;
+}
+
+.change__icon>.fa-xmark {
+    visibility: visible;
 }
 
 .fa-solid {
     font-size: 30px;
     opacity: 0.9;
     cursor: pointer;
-    transition: 0.3s;
+}
 
+.fa-bars {
+    visibility: visible;
+    padding-left: 13px;
+    position: absolute;
+
+}
+
+.fa-xmark {
+    visibility: hidden;
+    padding-left: 17px;
+    position: absolute;
 }
 
 .main {
